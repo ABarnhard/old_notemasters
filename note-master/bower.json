@@ -1,0 +1,18 @@
+{
+  "name": "note-master",
+  "version": "1.0.0",
+  "authors": [
+    "Adam Barnhard <admbarn@gmail.com>"
+  ],
+  "main": "client/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.3.3",
+    "angular-ui-router": "~0.2.12",
+    "underscore": "~1.7.0",
+    "jquery": "~2.1.1",
+    "toastr": "~2.1.0",
+    "foundation": "~5.4.7",
+    "fontawesome": "~4.2.0"
+  }
+}

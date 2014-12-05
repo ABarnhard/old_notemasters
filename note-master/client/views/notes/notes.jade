@@ -1,0 +1,30 @@
+h1 NOTES
+
+.row
+  .small-8.columns
+    .row
+      .small-12.columns
+        h3 Create a Note
+        .row
+          .small-3.columns
+            input(type='text', ng-model='note.title', placeholder='Title')
+          .small-3.columns
+            input(type='text', ng-model='note.tags', placeholder='tag1, tag2, tag3')
+          .small-3.columns
+            input(type='text', ng-model='note.body', placeholder='What you want to make note of')
+          .small-3.columns
+            button.tiny.radius(ng-click='create(note)') Create Note
+    .row
+      .small-12.columns
+        h3 Notes List
+        table#rooms
+          thead
+            tr
+              td Title
+              td Tags
+              td Text
+          tbody
+            tr(ng-repeat='note in notes | orderBy:"created_at":true')
+              td {{note.title}}
+              td {{note.tags.join(', ')}}
+              td {{note.body}}
